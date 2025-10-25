@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number-Guessing-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="game-container">
+        <div class="header-container">
+            <img src="guess-game-img.png" alt="guess-game-image">
+            <div class="header-content">
+              <p class="game-description">Ready to play? Choose a range between 1 to <span onclick="generateRange()" >(Click here to enter a range)</span> and start guessing the secret number!</p>
+              <button class="new-num-btn" id="newNumBtn" onclick="generateNewNum()">New Number</button>
+            </div>
+        </div>
+         <div class="game-result">
+           <p id="gameResultText">Best of luck 👍 You can guess right number</p>
+        </div>
+        <div class="guess-container">
+            <h1 class="guess-heading"> Guess The Number ? </h1>
+            <input type="text"  class="user-input" id="userInput">
+            <div class="score">
+                <p id="attemptCount">Number of Attempts : 0</p>
+                <p id="bestScore">🏆Best Score : 0</p>
+            </div>
+            <div>
+                <button class="btn" onclick="checkGuess()">Check</button>
+            </div>
+            <form>
+                <button class="btn">Reset</button>
+            </form>
+        </div>
+     </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

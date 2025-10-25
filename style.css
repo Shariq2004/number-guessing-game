@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(37, 81, 159); 
+    text-align: center;
+}
+.game-container{
+    padding: 0.5rem;
+}
+.header-container{
+    padding: 1rem 0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.header-container img{
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem 0rem;
+    gap: 1rem;
+}
+.game-description{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.game-description span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.new-num-btn{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 81, 159); 
+    cursor: pointer;
+    display: none;
+}
+.guess-container{
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+.guess-heading{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guess-heading img{
+    height: 50px;
+}
+.user-input{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border: 1px solid  gray;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.score{
+    margin: 0.8rem 0 3rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score p{
+   color: #fff;
+   font-size: 1rem;
+}
+.btn{
+    width: 100%;
+    padding: 10px 0 ;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #799EFF;
+    cursor: pointer;
+}
+.game-result{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 15px 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+
+
+/* @media Queries start  */
+
+@media (max-width: 400px){
+    .header-container img{
+      height: 100px;
+    }
+    .header-content{
+      padding: 0.5rem 0.5rem 0rem;
+      flex-direction: column;
+    }
+    .game-description{
+        font-size: 0.87rem;
+        line-height: 1.5;
+    }
+    .guess-heading{
+        font-size: 1.5rem;
+    }
+    #gameResultText{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .new-num-btn{
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    .user-input{
+        padding: 8px 10px;
+    }
+    .score p{
+        font-size: 0.9rem;
+    }
+    .btn{
+        padding: 8px 0 ;
+    }
+}
